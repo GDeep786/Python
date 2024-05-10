@@ -1,0 +1,13 @@
+# Simple and Compound Interest Calculation
+principal = float(input('Enter the principal amount: '))
+time = float(input('Enter the time (in years): '))
+rate = float(input('Enter the annual interest rate (as a percentage): '))
+
+# Calculate simple interest
+simple_interest = (principal * time * rate) / 100
+
+# Calculate compound interest
+compound_interest = principal * ((1 + rate / 100) ** time - 1)
+
+print(f'Simple interest is: {simple_interest:.2f}')
+print(f'Compound interest is: {compound_interest:.2f}')
